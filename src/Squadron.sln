@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29009.5
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cloud", "Cloud", "{5E244D5B-B032-458A-BBD2-0A403BBA61F9}"
 EndProject
@@ -77,6 +77,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FtpServer", "FtpServer\FtpServer.csproj", "{75C7091E-9079-494B-A254-35D6154FC92E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FtpServer.Tests", "FtpServer.Tests\FtpServer.Tests.csproj", "{2F6001D8-3249-4047-8A0D-E221BACA0660}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keycloak", "Keycloak\Keycloak.csproj", "{8F69AB47-8256-4ED1-8254-E3C19D405CBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keycloak.Tests", "Keycloak.Tests\Keycloak.Tests.csproj", "{8A5F75AD-767B-407F-A7B9-986973E5148B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -532,6 +536,30 @@ Global
 		{2F6001D8-3249-4047-8A0D-E221BACA0660}.Release|x64.Build.0 = Release|Any CPU
 		{2F6001D8-3249-4047-8A0D-E221BACA0660}.Release|x86.ActiveCfg = Release|Any CPU
 		{2F6001D8-3249-4047-8A0D-E221BACA0660}.Release|x86.Build.0 = Release|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Debug|x64.Build.0 = Debug|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Debug|x86.Build.0 = Debug|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Release|x64.ActiveCfg = Release|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Release|x64.Build.0 = Release|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Release|x86.ActiveCfg = Release|Any CPU
+		{8F69AB47-8256-4ED1-8254-E3C19D405CBC}.Release|x86.Build.0 = Release|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Debug|x64.Build.0 = Debug|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Debug|x86.Build.0 = Debug|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Release|x64.ActiveCfg = Release|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Release|x64.Build.0 = Release|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Release|x86.ActiveCfg = Release|Any CPU
+		{8A5F75AD-767B-407F-A7B9-986973E5148B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

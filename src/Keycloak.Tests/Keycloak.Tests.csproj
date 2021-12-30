@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(CCTestProjectProps)" Condition="Exists('$(CCTestProjectProps)')" />
+
+  <PropertyGroup>
+    <AssemblyName>Squadron.Keycloak.Tests</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Keycloak\Keycloak.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\realm.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
