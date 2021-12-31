@@ -20,8 +20,7 @@ namespace Squadron
             builder
                 .Name("keycloak")
                 .Image("jboss/keycloak:latest")
-                .AddEnvironmentVariable("KEYCLOAK_USER=admin")
-                .AddEnvironmentVariable("KEYCLOAK_PASSWORD=admin")
+                .AddEnvironmentVariable("JAVA_OPTS=-Dkeycloak.profile.feature.scripts=enabled -Dkeycloak.profile.feature.upload_scripts=enabled")
                 .WaitTimeout(60)
                 .InternalPort(8080);
         }

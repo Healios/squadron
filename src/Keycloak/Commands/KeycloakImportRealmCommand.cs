@@ -10,9 +10,9 @@ namespace Squadron
             string realm,
             string file)
         {
-            _command.Append("kcadm.sh create partialImport ");
+            _command.Append("/opt/jboss/keycloak/bin/kcadm.sh create partialImport ");
             _command.Append($"-r {realm} ");
-            _command.Append("-s ifResourceExists=FAIL -o ");
+            _command.Append("-s ifResourceExists=OVERWRITE -o ");
             _command.Append($"-f {file}");
         }
 

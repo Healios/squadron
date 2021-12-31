@@ -8,7 +8,7 @@ namespace Squadron
 
         internal KeycloakCreateRealmCommand(string realm)
         {
-            _command.Append("kcadm.sh create realms ");
+            _command.Append("/opt/jboss/keycloak/bin/kcadm.sh create realms ");
             _command.Append($"-s realm={realm} ");
             _command.Append("-s enabled=true");
         }

@@ -50,11 +50,15 @@ namespace Squadron
 
             await Manager.CopyToContainerAsync(copyContext);
 
-            await Manager.InvokeCommandAsync(new KeycloakAuthenticateCommand(ConnectionString).ToContainerExecCreateParameters());
+            await Manager.InvokeCommandAsync(new KeycloakCreateAdminUserCommand("admin", "admin").ToContainerExecCreateParameters());
+
+            await Manager.InvokeCommandAsync(new KeycloakAuthenticateCommand(ConnectionString, "master", "admin", "admin").ToContainerExecCreateParameters());
 
             await Manager.InvokeCommandAsync(new KeycloakCreateRealmCommand(options.Realm).ToContainerExecCreateParameters());
 
-            await Manager.InvokeCommandAsync(new KeycloakImportRealmCommand(options.Realm, copyContext.Destination).ToContainerExecCreateParameters());
+            var commandParams = new KeycloakImportRealmCommand(options.Realm, copyContext.Destination.Replace("\\", "/")).ToContainerExecCreateParameters();
+            commandParams.Privileged = true;
+            await Manager.InvokeCommandAsync(commandParams);
         }
     }
 }
